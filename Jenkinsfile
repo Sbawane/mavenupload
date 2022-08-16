@@ -7,7 +7,7 @@ pipeline
         {
             steps
             {
-                git 'https://github.com/intelliqittrainings/maven.git'
+                git 'https://github.com/Sbawane/mavenupload.git'
             }
         }
         stage('ContinuousBuild')
@@ -27,7 +27,7 @@ pipeline
         stage('ContinuousTesting')
         {
             steps
-            {
+           {
                 git 'https://github.com/intelliqittrainings/FunctionalTesting.git'
                 sh 'java -jar /home/ubuntu/.jenkins/workspace/Declarative2/testing.jar'
             }
